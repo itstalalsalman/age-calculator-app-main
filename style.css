@@ -1,0 +1,22 @@
+:root{
+    /** Primary Colors **/
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+
+    /* Neutral */
+    --wht: ;
+    --offWhite: ;
+    --lightGrey: ;
+    --smokeyGrey: ;
+    --offBlack: ;
+
+    --inputFontSize: 32px;
+    --poppinFont: "Poppins", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
