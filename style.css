@@ -4,11 +4,11 @@
     --lightRed: hsl(0, 100%, 67%);
 
     /* Neutral */
-    --wht: ;
-    --offWhite: ;
-    --lightGrey: ;
-    --smokeyGrey: ;
-    --offBlack: ;
+    --wht: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
 
     --inputFontSize: 32px;
     --poppinFont: "Poppins", sans-serif;
@@ -19,4 +19,169 @@
     margin: 0;
     padding: 0;
 }
+
+
+.main__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightGrey);
+}
+
+.inside__container{
+    width: 50%;
+    height: 70%;
+    background-color: var(--offWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom-right-radius: 150px;
+    
+}
+
+.input__row{
+    width: 85%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10%;
+}
+
+.date-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 110px;
+    height: 65px;
+}
+
+#dd{
+    width: 100%;
+    height: 60%;
+}
+
+#mm{
+    width: 100%;
+    height: 60%;
+}
+
+#yyyy{
+    width: 100%;
+    height: 60%;
+}
+
+label{
+    font-family: var(--poppinFont);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--smokeyGrey);
+}
+
+.line-to-btn{
+    width: 85%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background-color: var(--lightGrey);
+    border: none;
+}
+
+#calculate__age{
+    width: 60px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--purple);
+    border: none;
+    transition: background-color 0.2s ease-in;
+}
+
+#calculate__age:hover{
+    background-color: var(--offBlack);
+    cursor: pointer;
+    .arrow-btn-down{
+        background-color: var(--offBlack);
+    }
+}
+
+.arrow-btn-down{
+    width: 50px;
+    height: 30px;
+    background-color: var(--purple);
+    object-fit: contain;
+    transition: background-color 0.2s ease-in;
+
+}
+
+
+.calculated-res-area{
+    width: 85%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+}
+
+  .date-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .date-input input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  } 
+  
+  /* Placeholder Styling */
+  .date-input input[type="number"]::placeholder { 
+    color: var(--smokeyGrey);
+    font-weight: 700;
+  }
+  
+  /* JS-added Letter Spacing */
+  .result-active .calc_res span { 
+    letter-spacing: 5px;  
+  }
+
+.calc_res{
+    width: 100%;
+    height: 30%;
+    font-family: var(--poppinFont);
+    font-size: 5rem;
+    font-style: italic;
+    display: flex;
+    gap: 2%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+span{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--purple);
+}
+
+
+
+
 
